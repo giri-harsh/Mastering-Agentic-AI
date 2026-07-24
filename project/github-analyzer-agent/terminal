@@ -1,0 +1,6 @@
+from tools import get_file_content
+import os
+from dotenv import load_dotenv
+load_dotenv()
+token = os.getenv("GITHUB_TOKEN")
+print(get_file_content("https://github.com/giri-harsh/Yap-Doc", 'README.md',token))
